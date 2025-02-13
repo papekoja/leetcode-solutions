@@ -19,7 +19,17 @@ cd "$PROJECT_NAME" || exit
 # Define the boilerplate Rust code
 BOILERPLATE_CODE='
 fn main() {
-	include_str!("input.in");
+    let nums: Vec<i32> = vec![1];
+    let result = Solution::solution(nums);
+    println!("Result: {}", result);
+}
+
+struct Solution;
+
+impl Solution {
+    pub fn solution(nums: Vec<i32>) -> i32 {
+        0
+    }
 }
 '
 
